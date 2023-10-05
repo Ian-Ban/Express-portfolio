@@ -1,0 +1,29 @@
+<!--Lab Exercise 1, Ian Bangcoy 300702561, 10/4/2023-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <% include partials/head %> 
+</head>
+<body>
+<% include partials/menu %>
+<div class="container-fluid bg-3 text-center">    
+  <h3><%= page %></h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p><img src="images/picture.jpg" style="width: 300px;"></p>
+      
+    </div>
+    <div class="col-sm-4"> 
+      <p>My name is Ian Bangcoy. I'm 28 years old and I currently reside in Toronto, Canada. I enjoy playing video games, working out,
+        and eating delicious food!. I'm currently in Software Engineering at Centennial College in my third semester. I want to develop 
+        websites and create apps to help people around the world.</p>
+    </div>
+    <div class="col-sm-4"> 
+      <p style="font-size: 30px"><a href="/assets/resume.pdf" target="_blank">View my resume</a></p>
+    </div>
+  </div>
+</div>
+</body>
+<% include partials/script %>
+</html>

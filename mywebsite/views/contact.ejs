@@ -1,0 +1,47 @@
+<!--Lab Exercise 1, Ian Bangcoy 300702561, 10/4/2023-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <% include partials/head %> 
+</head>
+<body>
+<% include partials/menu %>
+<div class="container-fluid bg-3 text-center">    
+  <h3><%= page %></h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p><img src="images/contact.jpg" style="width: 300px;"</p>
+      
+    </div>
+
+    <div class="col-sm-4 contact-panel"> 
+      <h2>Contact Information</h2>
+    <p>Please feel free to reach out to me via email:</p>
+    <p>Email: <a href="mailto:ian.bangcoy@hotmail.com">ian.bangcoy@hotmail.com</a></p>
+    </div>
+    
+    <div class="col-sm-4"> 
+      <form action="/submit_form" method="post">
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname" required><br>
+  
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname" required><br>
+  
+        <label for="contact_number">Contact Number:</label><br>
+        <input type="text" id="contact_number" name="contact_number"><br>
+  
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+  
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br>
+  
+        <input type="submit" value="Submit">
+    </div>
+  </div>
+</div>
+</body>
+<% include partials/script %>
+</html>
